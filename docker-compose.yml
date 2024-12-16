@@ -18,7 +18,7 @@ services:
     tty: true
     stdin_open: true    
     # Uncomment if you need a container shell when the container won't run 
-    # entrypoint: "/bin/ash"
+    entrypoint: "/bin/ash"
     
     restart: unless-stopped
     stop_grace_period: 2m
