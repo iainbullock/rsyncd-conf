@@ -2,7 +2,7 @@ FROM alpine:3.21
 
 # install dependencies
 RUN apk update && apk add --no-cache \
-  vim
+  rsync
 
 # Copy configs and scripts
 RUN mkdir /conf /app
