@@ -1,0 +1,24 @@
+volumes:
+  innovv_cam_wifi:
+    external: true
+    
+services:
+  innovv_cam_wifi:
+    # Uncomment one of these. Use :latest if you want the stable build, use :dev if you want the development build
+    image: iainbullock/innovv_cam_wifi:latest
+    #image: iainbullock/innovv_cam_wifi:dev
+    container_name: innovv_cam_wifi
+   
+    volumes:
+      - innovv_cam_wifi:/config
+    
+    network_mode: host
+         
+    # Allow opening of a shell in container
+    tty: true
+    stdin_open: true    
+    # Uncomment if you need a container shell when the container won't run 
+    # entrypoint: "/bin/ash"
+    
+    restart: unless-stopped
+    stop_grace_period: 2m
