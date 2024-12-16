@@ -1,18 +1,18 @@
 volumes:
-  innovv_cam_wifi:
+  rsyncd_docker:
     external: true
     
 services:
-  innovv_cam_wifi:
+  rsyncd_docker:
     # Uncomment one of these. Use :latest if you want the stable build, use :dev if you want the development build
-    image: iainbullock/innovv_cam_wifi:latest
-    #image: iainbullock/innovv_cam_wifi:dev
-    container_name: innovv_cam_wifi
+    image: iainbullock/rsyncd_docker:latest
+    #image: iainbullock/rsyncd_docker:dev
+    container_name: rsyncd_docker
    
     volumes:
-      - innovv_cam_wifi:/config
+      - rsyncd_docker:/config
     
-    network_mode: host
+    network_mode: bridge
          
     # Allow opening of a shell in container
     tty: true

@@ -1,6 +1,6 @@
-# innovv_cam_wifi_docker
-## Connect to Innovv Camera using Wifi, then do stuff
+# rsyncd_docker
+## Run rsyncd daemon in a container
 
-https://github.com/iainbullock/innovv_cam_wifi_docker
+https://github.com/iainbullock/rsyncd_docker
 
 For my personal use, not publically supported
