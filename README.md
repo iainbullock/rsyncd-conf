@@ -3,7 +3,7 @@
 
 https://github.com/iainbullock/rsyncd_docker
 
-For my personal use, not publically supported
+For my personal use, not publically supported. High level instructions provided below
 
 ## Set up instructions
 1. Create a Docker volume called rsyncd_docker
