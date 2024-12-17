@@ -11,8 +11,12 @@ services:
    
     volumes:
       - rsyncd_docker:/conf
+      # Change to the root where all your modules are located. Could be /
+      - /home:/home
     
     network_mode: bridge
+    ports:
+      - 873:873
          
     # Allow opening of a shell in container
     tty: true
