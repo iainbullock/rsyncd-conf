@@ -6,7 +6,7 @@ https://github.com/iainbullock/rsyncd_docker
 For my personal use, not publically supported. High level instructions provided below
 
 ## Set up instructions
-1. Create a Docker volume called rsyncd_docker
+1. Create a Docker volume called rsyncd
 2. Review and modify the docker-compose.yml file according to your requirements. Likely changes will be the volume mapping - /home:/home, and the port mapping
 3. Deploy the Docker stack using your modified docker-compose.yml
 4. Let the container run for the first time to create the default config files in the Docker volume
