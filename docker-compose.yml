@@ -10,7 +10,7 @@ services:
     container_name: rsyncd_docker
    
     volumes:
-      - rsyncd_docker:/conf
+      - rsyncd_docker:/config
       # Change to the root where all your modules are located. Could be /
       - /home:/home
     
