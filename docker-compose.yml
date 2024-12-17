@@ -1,16 +1,16 @@
 volumes:
-  rsyncd_docker:
+  rsyncd:
     external: true
     
 services:
-  rsyncd_docker:
+  rsyncd:
     # Uncomment one of these. Use :latest if you want the stable build, use :dev if you want the development build
-    image: iainbullock/rsyncd_docker:latest
-    #image: iainbullock/rsyncd_docker:dev
-    container_name: rsyncd_docker
+    image: iainbullock/rsyncd:latest
+    #image: iainbullock/rsyncd:dev
+    container_name: rsyncd
    
     volumes:
-      - rsyncd_docker:/config
+      - rsyncd:/config
       # Change to the root where all your modules are located. Could be /
       - /home:/home
     
