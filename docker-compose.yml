@@ -16,7 +16,7 @@ services:
     
     network_mode: bridge
     ports:
-      - 873:873
+      - 10873:873
          
     # Allow opening of a shell in container
     tty: true
